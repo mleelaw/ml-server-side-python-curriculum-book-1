@@ -17,7 +17,6 @@ purchases = [
 ]
 
 
-# function for individual purchase list
 def purchase_list():
     print("Purchase List")
     print("-" * 25)

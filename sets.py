@@ -27,18 +27,17 @@ def display_results(common, unique1, unique2):
         print(word)
 
 
-# Example paragraphs
 paragraph1 = "Python is a great programming language. Python is popular and powerful."
 paragraph2 = "Python is widely used in data science. Data science is an exciting field."
 
-# Extracting unique words from paragraphs
+
 unique_words1 = extract_unique_words(paragraph1)
 unique_words2 = extract_unique_words(paragraph2)
 
-# Finding common and unique words
+
 common_words = find_common_words(unique_words1, unique_words2)
 unique_to_paragraph1 = find_unique_words(unique_words1, unique_words2)
 unique_to_paragraph2 = find_unique_words(unique_words2, unique_words1)
 
-# Displaying the comparison results
+
 display_results(common_words, unique_to_paragraph1, unique_to_paragraph2)
