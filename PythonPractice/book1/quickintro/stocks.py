@@ -17,15 +17,16 @@ purchases = [
 ]
 
 
-# def purchase_list():
-#     print("Purchase List")
-#     print("-" * 25)
-#     for purchase in purchases:
-#         update_list = (purchase[1]) * (purchase[3])
+# function for individual purchase list
+def purchase_list():
+    print("Purchase List")
+    print("-" * 25)
+    for purchase in purchases:
+        update_list = (purchase[1]) * (purchase[3])
 
-#         for ticker, name in ticker_symbols.items():
-#             if purchase[0] == ticker:
-#                 print(f"{name} stock purchased for {update_list}")
+        for ticker, name in ticker_symbols.items():
+            if purchase[0] == ticker:
+                print(f"{name} stock purchased for {update_list}")
 
 
 def investment_by_ticker():
@@ -62,3 +63,4 @@ def investment_by_ticker():
 
 
 investment_by_ticker()
+purchase_list()
